@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  margin: 50px;
+}
+
+.element {
+  flex: 1;
+  margin: 20px;
+}

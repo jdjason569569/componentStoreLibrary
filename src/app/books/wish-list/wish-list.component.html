@@ -1,0 +1,5 @@
+
+<p>Lista de libros</p>
+<ul class="list" *ngFor="let book of wishList$ | async" >
+  <li (click)="handleClick(book)">{{ book }}</li>
+</ul>
