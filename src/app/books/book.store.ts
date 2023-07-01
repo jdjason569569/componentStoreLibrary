@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { ComponentStore } from '@ngrx/component-store';
 import { Observable } from 'rxjs';
 
+//the state of the variables is saved
+
 type BooksState  = {
   wishList: string[];
   reading: string[];
@@ -17,6 +19,7 @@ const initialState = {
 @Injectable()
 export class BooksStore extends ComponentStore<BooksState> {
 
+  //observables that are pending the change of the data
   public wishList$: Observable<string[]> = this.select(
     (state) => state.wishList
   );

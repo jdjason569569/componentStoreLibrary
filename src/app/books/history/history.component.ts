@@ -8,6 +8,7 @@ import { BooksStore } from '../book.store';
 })
 export class HistoryComponent {
 
+  //allows to consume data if the observable changes
   history$ = this.booksStore.history$;
 
   constructor(private readonly booksStore: BooksStore) {}
